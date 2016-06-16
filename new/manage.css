@@ -1,0 +1,29 @@
+ #h1_profile{
+	text-align: center;
+	margin-bottom:30px ;
+	margin-top: 150px;
+}
+
+form input{
+
+	border-radius: 0px !important;
+	margin-bottom:12px;
+}
+
+form button
+{
+	border-radius: 0px !important;
+	margin margin-left: 5px;
+	margin-top: 10px;
+}
+
+button.btnn
+{
+	border-radius: 0px !important;
+	margin-top:20px;
+	margin-bottom:10px; 
+}
+
+#bottom{
+	border-bottom:1px solid #e9e9e9;
+}

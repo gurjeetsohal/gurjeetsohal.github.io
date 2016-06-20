@@ -17,6 +17,43 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="booking.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+  <script>
+	$(document).ready(function(){
+		
+			$(".hello").show();
+			$(".hello1").hide();
+
+			$("#buttonclick").click(function(){
+            $(".hello1").show();
+            $(".hello").hide();
+        });
+
+            $("#buttonclick1").click(function(){
+            	$(".hello").show();
+            	$(".hello1").hide();
+           
+	
+            });
+	});
+
+
+</script>
+
+<!-- <script>
+$(document).ready(function(){
+    $("#hidetest").click(function(){
+        $(".hello").animate({width:"300px"});
+    });
+});
+</script>
+-->
+
+
 </head>
 <body>
   <nav class="navbar navbar-default" style="min-height:90px;">
@@ -43,12 +80,15 @@
       </div>
     </div>
   </nav>
+  <button type="button" id="buttonclick" >check me</button>
+  <button type="button" id="buttonclick1" >hello</button>
   
-
+   <div class="hello">
  <div class="container"> 
   <div class="row">
+  
   <div class="col-md-offset-3 col-md-6">
-   <div class="panel panel-default" style="margin-top:10px;">
+   <div class="panel panel-default">
    <div class="panel-body">
 
   <div class="row">
@@ -87,7 +127,55 @@
  </div>
  </div>
  </div>
+ </div>
 
+    <div class="hello1">
+ <div class="container"> 
+  <div class="row">
+  <button type="button" id="hidetest" >check me</button>
+  <div class="col-md-offset-3 col-md-6">
+   <div class="panel panel-default" style="margin-top:10px;">
+   <div class="panel-body">
+
+  <div class="row">
+  <div class="col-md-12">
+  <p style="font-size:20px">this is a new page  <img src="#" alt="vector" class="img-responsive pull-right" >
+</p>
+ <p style="margin-top:10px;"><span style="font-size:15px; margin-right:5px;"class="glyphicon glyphicon-check"></span>*Bathroom pipe and fittings*</p>
+    </div>
+     </div>
+     </div>
+     </div>
+  
+  
+
+<h2 style="margin:20px 0px 20px 0px;">you made it!!!!!!!!!!!!!!!!!!!!!!!</h2>
+<form>
+
+<input type="date" style="width:70%;margin-bottom:20px;" class="form-control">
+
+<select class="form-control" style="border-radius:0px ;width:70%;">
+<option >
+	10am-12pm
+</option>
+<option>
+     12pm-3pm
+</option>
+
+<option>
+  3pm-5pm	
+</option>
+  <option>
+    anytime between 10am-5pm
+    </option>
+</select>
+ </form>
+ </div>
+ </div>
+ </div>
+ </div>
+ 
+ 
 
 <footer>
   <div class="container">
@@ -144,9 +232,7 @@
  
 
 
+<script src="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_id"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

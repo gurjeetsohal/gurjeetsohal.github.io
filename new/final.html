@@ -1,0 +1,294 @@
+
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Date</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="logo.png"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="booking.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+  <script>
+$(document).ready(function(){
+$("#list").show();
+$("#upload").hide();
+$("#date_time").hide();
+    $("#next1").click(function(){
+        $("#upload").show();
+        $("#list").hide();
+        $("#date_time").hide();
+    });
+    $("#back1").click(function(){
+        $("#upload").hide();
+        $("#list").show();
+        $("#date_time").hide();
+    });
+
+    $("#next2").click(function(){
+        $("#upload").hide();
+        $("#list").hide();
+        $("#date_time").show();
+    });
+
+    $("#back2").click(function(){
+        $("#upload").show();
+        $("#list").hide();
+        $("#date_time").hide();
+    });
+      
+});
+              $(document).ready(function(){
+              $("#to_toggle").click(function(){
+              $("#up").toggle();
+                          });
+                 });
+
+              $(document).ready(function(){
+        $("button#next1").click(function(){
+            var radioValue = $("input[name='radio-group']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue);
+            }
+        });
+        
+    });
+
+</script>
+	
+</head>
+<body>
+
+  <nav class="navbar navbar-default" style="min-height:90px;">
+  <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nb" aria-expanded="false">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+                  
+                  <a class="navbar-brand" href="index.html">
+                  <img width="70" height="70" alt="Brand" src="logo.png">
+                  </a>
+          </div>
+      
+          <div  class="collapse navbar-collapse" id="nb">
+              <ul class="nav navbar-nav navbar-right">
+                 <li><a href="howitworks.html">How it Works ?</a></li>
+                 <li><a href="#">Be a store partner</a></li>
+                 <li><a href="#">Login</a></li>
+              </ul>
+          </div>
+        </div>
+  </div>
+  </nav>
+
+
+  <div class="container">
+
+
+   <div class="row" id="list" >
+    <div class="col-md-offset-3 col-md-6" id="booking">
+     <div class="panel panel-default">
+      <div class="panel-body">
+            *Store list* 
+        <div class="pull-right">
+         <img src="#" alt="vector-icon" class="img-responsive">
+        </div>
+      </div>
+    </div>
+         <div>
+            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" value="1">
+            <label for="radio-1" class="radio-custom-label">1st Choice</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom" name="radio-group" type="radio" value="2">
+            <label for="radio-2" class="radio-custom-label">2nd Choice</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" name="radio-group" type="radio" value="3">
+            <label for="radio-3" class="radio-custom-label">3rd Choice</label>
+        </div>
+          <div>
+            <input id="radio-4" class="radio-custom" name="radio-group" type="radio" value="4">
+            <label for="radio-4" class="radio-custom-label">4th choice</label>
+        </div>
+        <div>
+            <input id="radio-5" class="radio-custom"name="radio-group" type="radio">
+            <label for="radio-5" class="radio-custom-label">5th Choice</label>
+        </div><br><br>
+         <div class="row">
+    <div class="col-md-6" style="padding-right:0px;">
+    <button class="btn-default  btn btn-block">Back </button></div>
+    <div class="col-md-6"  style="padding-left:0px;">
+     <button class="btn-primary pull-right btn btn-block" id="next1">Next </button>
+     </div>
+      </div>
+   
+   </div>
+</div>
+  
+       <div class="row" id="upload">
+    <div class="col-md-offset-3 col-md-6" id="booking">
+     <div class="panel panel-default">
+      <div class="panel-body">
+            <p style="margin-left:24px;">*Store type* <img src="#" alt="vector-icon" class="img-responsive pull-right"> </p><p><span class="glyphicon glyphicon-check"></span>  *selected sub-type* </p> 
+                   
+      </div>
+    </div>
+    <p id="uploadtext"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+    
+
+
+
+    <div id="up">
+    <h4 style="margin:10px 0px 10px 0px;"><b> Upload the material list</b>&nbsp;<span class="glyphicon glyphicon-upload"></span></h4><input type="file"></div>
+    <div class="checkbox">
+    <label><input type="checkbox" id="to_toggle">I don't have a list</label>
+</div><br>
+   <div class="row">
+    <div class="col-md-6" style="padding-right:0px;">
+     <button class="btn-default  btn btn-block" id="back1">Back </button></div>
+    <div class="col-md-6"  style="padding-left:0px;">
+     <button class="btn-primary pull-right btn btn-block" id="next2">Next </button>
+     </div>
+      </div>
+   </div>
+  
+  </div>
+</div>
+ 
+
+
+
+<!--gurjeet select time and date-->
+
+
+
+ <div id="date_time">
+   <div class="container" > 
+        <div class="row">
+  
+          <div class="col-md-offset-3 col-md-6" >
+             <div class="panel panel-default">
+             <div class="panel-body">
+
+                <div class="row">
+                   <div class="col-md-12">
+                      <p style="font-size:20px">*Hardware Material Store* <img src="#" alt="vector" class="img-responsive pull-right" ></p>
+                      <p style="margin-top:10px;"><span style="font-size:15px; margin-right:5px;"class="glyphicon glyphicon-check"></span>*Bathroom pipe and fittings*</p>
+                   </div>
+                </div>
+             </div>
+             </div>
+                  <h2 style="margin:38px 0px 38px 0px;">Select your Date and Time</h2>
+                
+                <input type="date" style="width:100%;margin-bottom:20px;" class="form-control">
+
+                <select class="form-control" style="border-radius:0px ;width:100%;">
+                    <option >
+	                     10am-12pm
+                    </option>
+                    <option>
+                         12pm-3pm
+                    </option>
+                    <option>
+                         3pm-5pm	
+                    </option>
+                    <option>
+                          anytime between 10am-5pm
+                    </option>
+                </select>
+ 
+          
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+            
+            <div class="col-md-6" style="padding:0px;">
+            <button class="btn btn-default btn-block" style="margin:40px 0px 20px 0px;border-radius:0px;" id="back2">previous</button>
+
+            </div>
+            <div class="col-md-6" style=" padding:0px;">
+            <button class="btn btn-primary btn-block " style="margin:40px 0px 20px 0px;border-radius:0px;">next</button>
+             </div>
+            
+            
+            
+           </div> 
+        </div>
+     </div>
+ </div>
+
+ 
+<footer>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul>      
+     <li><a href="">Why Unclejoy?</a></li>
+     <li><a href="">Get your store listed.</a></li>
+     <li><a href="">How it works ?</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3">
+    <ul type="none;">      
+     <li><a href="">Terms and Conditions</a></li>
+     <li><a href="">Privacy Policy</a></li>
+     <li><a href="">FAQs</a></li>
+    </ul>
+
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+       
+      
+     </div>  
+    <div class="col-md-3">
+      <ul>      
+     <li><p style="color:#fff;">About the company</p></li>
+     <li><p>UNCLEJOY is an online web platform for booking local hardware, electricals, paint and wood & timber material store.</p></li></ul>
+     
+     
+    </div>
+    </div>
+  
+  </div>
+ <div class="row" id="row2">
+   <div class="col-md-12">
+    <ul style="text-align:center">
+    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    </div>
+    <p>2015-16 &copy; Unclejoy Technology Private Limited - All rights reserved</p>
+  </div>  
+
+</footer>
+
+
+</body>
+</html>

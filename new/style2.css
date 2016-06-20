@@ -1,0 +1,83 @@
+.panel-body{
+	font-weight:600;
+	color:black;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+body{
+font-family: 'Raleway', sans-serif;
+background:linear-gradient(white,#e9e9e9);
+}
+.radio :hover{
+font-size: 15px;
+color:black;
+}
+.radio{
+	color:black;
+
+}
+.next{
+	margin-right: 40px;
+}
+.btn-primary, .btn-default{
+	margin-top: 30px;
+	border-radius: 0px;
+	
+}
+#uploadtext{
+	font-size: 15px;
+	font-weight:600px;
+}
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: grey;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.radio-custom + .radio-custom-label:before {
+    
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: grey;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+      
+footer{
+
+}

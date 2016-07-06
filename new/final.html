@@ -53,7 +53,7 @@ $("#date_time").hide();
     });
       
 });
-              $(document).ready(function(){
+          /* $(document).ready(function(){
               $("#to_toggle").click(function(){
               $("#up").toggle();
                           });
@@ -67,7 +67,18 @@ $("#date_time").hide();
             }
         });
         
-    });
+    }); */
+
+
+      $.fn.myfunction=function(){
+      $("#next1").click(function(){
+          var a=  $('#check').val();
+          alert(a);
+          $("demo").html("a");
+
+      });
+    };
+      
 
 </script>
 	
@@ -115,7 +126,7 @@ $("#date_time").hide();
       </div>
     </div>
          <div>
-            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" value="1">
+            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" value="helllllllllloooooooooooooo" id="check">
             <label for="radio-1" class="radio-custom-label">1st Choice</label>
         </div>
         <div>
@@ -141,6 +152,7 @@ $("#date_time").hide();
      <button class="btn-primary pull-right btn btn-block" id="next1">Next </button>
      </div>
       </div>
+      
    
    </div>
 </div>
@@ -149,13 +161,14 @@ $("#date_time").hide();
     <div class="col-md-offset-3 col-md-6" id="booking">
      <div class="panel panel-default">
       <div class="panel-body">
-            <p style="margin-left:24px;">*Store type* <img src="#" alt="vector-icon" class="img-responsive pull-right"> </p><p><span class="glyphicon glyphicon-check"></span>  *selected sub-type* </p> 
+            <p style="margin-left:24px;">*Store type* <img src="#" alt="vector-icon" class="img-responsive pull-right"> </p><p><span class="glyphicon glyphicon-check"></span>  *selected sub-type* </p>
+            <p id="demo"></p>
                    
       </div>
     </div>
     <p id="uploadtext"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
     
-
+<p id="demo"></p>
 
 
     <div id="up">
